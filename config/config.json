@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "db_ticket_development",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "db_ticket_test",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgress",
+    "protocol": "postgress",
+    "dialectOptions": {
+      "ssl" : {
+        "require" : true,
+        "rejectUnauthorized" : false
+      }
+    }
+  }
+}
